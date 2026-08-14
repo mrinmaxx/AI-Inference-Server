@@ -1,0 +1,22 @@
+syntax = "proto3";
+
+package inference;
+
+// The serving interface. Phase 1 exposes exactly one unary RPC modelling a
+// single inference call. In later phases the *implementation* batches many of
+// these together internally, but the wire contract stays identical.
+service Inference {
+  rpc Predict(PredictRequest) returns (PredictResponse);
+}
+
+// A single inference request. `input` is the model's input tensor flattened to
+// a 1-D array of floats (e.g. a 3x224x224 image => 150528 values, row-major).
+message PredictRequest {
+  repeated float input = 1;
+}
+
+// The model's prediction for one request. `output` is the flattened output
+// tensor (e.g. 1000 class logits for a ResNet-50 classifier).
+message PredictResponse {
+  repeated float output = 1;
+}

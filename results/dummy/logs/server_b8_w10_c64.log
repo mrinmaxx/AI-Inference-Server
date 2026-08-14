@@ -1,0 +1,7 @@
+Starting inference server
+  address       = 0.0.0.0:50515
+  max_batch     = 8
+  max_wait_ms   = 10
+  engine        = DummyEngine (~20ms sleep per batch)
+Inference server listening on 0.0.0.0:50515
+Press Ctrl-C to stop.

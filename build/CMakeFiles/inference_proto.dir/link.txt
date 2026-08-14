@@ -1,0 +1,2 @@
+/usr/bin/ar qc libinference_proto.a CMakeFiles/inference_proto.dir/generated/inference.pb.cc.o CMakeFiles/inference_proto.dir/generated/inference.grpc.pb.cc.o
+/usr/bin/ranlib libinference_proto.a

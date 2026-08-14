@@ -1,0 +1,7 @@
+Starting inference server
+  address       = 0.0.0.0:50244
+  max_batch     = 16
+  max_wait_ms   = 5
+  engine        = OnnxEngine(resnet50.onnx, CPU)
+Inference server listening on 0.0.0.0:50244
+Press Ctrl-C to stop.

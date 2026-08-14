@@ -1,0 +1,1 @@
+/usr/bin/c++ -O3 -DNDEBUG CMakeFiles/bench_client.dir/bench/client.cpp.o -o bench_client  libinference_proto.a /usr/lib/x86_64-linux-gnu/libgrpc++.so /usr/lib/x86_64-linux-gnu/libgrpc.so /usr/lib/x86_64-linux-gnu/libgpr.so /usr/lib/x86_64-linux-gnu/libprotobuf.so 
